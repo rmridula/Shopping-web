@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Home & Living</a></li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <h1>Discover the Best of Fashion & Living</h1>
+            <p>Find everything you need to upgrade your wardrobe and home. Quality, style, and comfort all in one place.</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="user-box">
+            <img src="images/user.png" alt="user image">
+        </div>
+    </div>
+
+    <!-- About Page Content -->
+    <div class="about-page">
+        <h2>About Us</h2>
+        <p>We are a leading fashion and lifestyle brand dedicated to providing our customers with the best in style, quality, and comfort.</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <!-- Product Page Content -->
+    <div class="product-page">
+        <h2>Our Products</h2>
+        <p>Explore our wide range of products designed to cater to every need. From stylish apparel to elegant home furnishings, we have it all!</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <!-- Contact Page Content -->
+    <div class="contact-page">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us. We are always here to help!</p>
+        <p>Email: contact@website.com</p>
+        <p>Phone: +123 456 7890</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+
+</body>
+</html>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+.text-box {
+    margin-top: 80px;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.text-box a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #3f51b5;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.text-box a:hover {
+    background-color: #5c6bc0;
+}
+
+.user-box {
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-box img {
+    display: block;
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* About, Product, and Contact page styles */
+.about-page, .product-page, .contact-page {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h2, .product-page h2, .contact-page h2 {
+    font-size: 36px;
+    color: #ff7e5f;
+    margin-bottom: 20px;
+}
+
+.about-page p, .product-page p, .contact-page p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-page a, .product-page a, .contact-page a {
+    text-decoration: none;
+    color: #ff7e5f;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-page a:hover, .product-page a:hover, .contact-page a:hover {
+    color: #feb47b;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 5%;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .user-box img {
+        width: 250px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+</style>
